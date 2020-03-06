@@ -20,7 +20,7 @@ public abstract class BaseClass {
         RestAssuredMockMvc.standaloneSetup(personRestController);
 
         Mockito.when(personService.findPersonById(1L))
-                .thenReturn(new Person(1L, "foor", "beer"));
+                .thenReturn(new Person(1L, "foo-new", "beer-new"));
     }
 
 }
