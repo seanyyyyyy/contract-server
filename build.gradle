@@ -2,19 +2,15 @@ buildscript {
 	repositories {
 		mavenCentral()
 		mavenLocal()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { url "https://repo.spring.io/milestone" }
+		maven { url "https://repo.spring.io/release" }
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.1.RELEASE")
 		classpath 'org.springframework.cloud:spring-cloud-contract-gradle-plugin:2.2.1.RELEASE'
 	}
 }
-
-/*
-plugins {
-	id 'org.springframework.boot' version '2.2.5.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-	id 'java'
-}*/
 
 apply plugin: 'groovy'
 apply plugin: 'java'
